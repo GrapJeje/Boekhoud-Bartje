@@ -1,0 +1,115 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f8fafc;
+}
+
+.main-container {
+    -fx-alignment: center;
+    -fx-padding: 30;
+    -fx-max-width: 600;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 20, 0, 0, 0);
+    -fx-padding: 25;
+    -fx-border-radius: 12px;
+    -fx-border-color: #e2e8f0;
+}
+
+.header {
+    -fx-font-size: 22px;
+    -fx-text-fill: #1e293b;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 20 0;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #475569;
+    -fx-font-weight: 500;
+}
+
+.text-field, .combo-box, .date-picker {
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.03), 3, 0, 0, 1);
+}
+
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #6366f1;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(99, 102, 241, 0.2), 5, 0, 0, 2);
+}
+
+.button {
+    -fx-background-color: #6366f1;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+    -fx-font-size: 14px;
+    -fx-border-radius: 8px;
+    -fx-border-width: 0;
+}
+
+.button:hover {
+    -fx-background-color: #4f46e5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 7, 0, 0, 2);
+}
+
+#voegItemToe {
+    -fx-background-color: #10b981;
+}
+
+#voegItemToe:hover {
+    -fx-background-color: #0d9f6e;
+}
+
+#exporteerPdf {
+    -fx-background-color: #8b5cf6;
+}
+
+#exporteerPdf:hover {
+    -fx-background-color: #7c3aed;
+}
+
+.items-section {
+    -fx-padding: 15;
+    -fx-background-color: #f1f5f9;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e2e8f0;
+}
+
+.items-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #1e293b;
+}
+
+.button-container {
+    -fx-spacing: 15;
+    -fx-alignment: center;
+}
+
+.grid-pane {
+    -fx-vgap: 12;
+    -fx-hgap: 15;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #6366f1;
+    -fx-background-radius: 0 6px 6px 0;
+}
+
+.date-picker .arrow {
+    -fx-background-color: white;
+}
