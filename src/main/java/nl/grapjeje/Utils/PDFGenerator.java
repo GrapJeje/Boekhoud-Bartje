@@ -24,16 +24,10 @@ public class PDFGenerator {
     public static void createInvoice(Quote quote) throws DocumentException, IOException {
         try {
             Document document = new Document();
-            String dataDir = System.getProperty("app.data.dir",
-                    System.getProperty("user.dir") + File.separator + "data" + File.separator + "facturen");
 
-            File outputDir = new File(dataDir);
-            if (!outputDir.exists()) {
-                boolean dirsCreated = outputDir.mkdirs();
-                if (!dirsCreated) throw new IOException("Kon directory niet aanmaken: " + outputDir.getAbsolutePath());
-            }
+            String downloadsPath = System.getProperty("user.home") + File.separator + "Downloads";
+            String filePath = downloadsPath + File.separator + "Factuur_" + quote.getInvoiceNumber() + ".pdf";
 
-            String filePath = outputDir.getAbsolutePath() + File.separator + "Factuur_" + quote.getInvoiceNumber() + ".pdf";
             System.out.println("PDF wordt opgeslagen in: " + filePath);
 
             PdfWriter.getInstance(document, new FileOutputStream(filePath));
